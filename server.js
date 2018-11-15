@@ -7,20 +7,25 @@ const app = express();
 
 const connection = mongoose.connection;
 connection.on('connected', () => {
-  console.log('Mongoose Connected Successfully')
+    console.log('Mongoose Connected Successfully')
 })
 
-// If the connection throws an error
-connection.on('error', (err) => {
-  console.log('Mongoose default connection error: ' + err);
-}) 
+app.use(express.static(__dirname + '/client/build/'))
 
-app.use(bodyParser.json());
-app.get('/', (req,res) => {
-  res.send('Hello world!')
-})
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/client/build/index.html')})
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log("Magic happening on port " + PORT);
-})
+    // If the connection throws an error
+    connection.on('error', (err) => {
+        console.log('Mongoose default connection error: ' + err);
+    })
+
+    app.use(bodyParser.json());
+    app.get('/', (req, res) => {
+        res.send('Hello world!')
+    })
+
+    const PORT = process.env.PORT || 3001;
+    app.listen(PORT, () => {
+        console.log("Magic happening on port " + PORT);
+    })
