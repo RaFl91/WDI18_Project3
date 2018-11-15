@@ -1,0 +1,26 @@
+{
+  "name": "wdi18_project3",
+  "version": "1.0.0",
+  "description": "Project 3 for GA WDI 18",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaFl91/WDI18_Project3.git"
+  },
+  "author": "WDI18 RaFl91",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaFl91/WDI18_Project3/issues"
+  },
+  "homepage": "https://github.com/RaFl91/WDI18_Project3#readme",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.12",
+    "morgan": "^1.9.1"
+  }
+}
