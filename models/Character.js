@@ -13,4 +13,4 @@ const Character = new Schema({
     subgroup: String
 })
 
-module.exports = mongoose.module('Character', Character)
+module.exports = mongoose.model('Character', Character)
