@@ -5,7 +5,9 @@ export default class HomePage extends Component {
     return (
       <div>
         <h1>Hello from HomePageComponent</h1>
-        <Link to='/users/:userId'>Begin</Link>
+        <button>
+          <Link to='/users/:userId'>Begin</Link>
+        </button>
       </div>
     )
   }
