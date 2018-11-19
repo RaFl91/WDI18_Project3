@@ -27,7 +27,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <NavBarStyles>
-                    <Link to="/">Constructor</Link>
+                <Link to="/">Constructor</Link>
             </NavBarStyles>
         )
     }
