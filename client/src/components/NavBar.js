@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 //  ===== Styling =====
 const NavBarStyles = styled.div`
-    display: flex;
+    display: flex-right;
     justify-content: space-between;
     align-items: right;
     background: #242D42;
