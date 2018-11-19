@@ -5,7 +5,8 @@ import styled from 'styled-components'
 const HomePageStyles = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Orbitron|Raleway');
   font-family: 'Raleway', sans-serif;
-  display: flex-block;
+  display: flex;
+  background: #34B2A4;
   justify-content: space-between;
   main{
     font-size: 20px;
@@ -14,6 +15,7 @@ const HomePageStyles = styled.div`
   p{
     font-size: 20px;
     letter-spacing: 0.02em;
+    align-self: flex-end;
   }
   button{
     align-items: right;
@@ -21,7 +23,7 @@ const HomePageStyles = styled.div`
     font-style: italic;
     text-align: center;
     letter-spacing: 0.02em;
-    background: #34B2A4;
+    background: #CC2E81;
     padding: 15px 40px;
     border: 3px solid #E6ED96;
     border-radius: 50px;
@@ -32,7 +34,7 @@ const HomePageStyles = styled.div`
         color: #EDE696;
       }
     }
-  
+  }
   
 `
 export default class HomePage extends Component {
