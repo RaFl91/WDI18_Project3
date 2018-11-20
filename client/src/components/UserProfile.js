@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 export default class UserProfile extends Component {
@@ -25,9 +26,11 @@ export default class UserProfile extends Component {
     render() {
         return (
             <div>
-                {/* {this.state.characters.map(character => (
-                    <UserProfile getAllCharacters={this.getAllCharacters} key={character._id} character={character}/>
-                ))} */}
+                {this.state.characters.map((character) => (
+                    <div >
+                        <Link to={`/api/character/${character._id}`}>{character.name}</Link>
+                    </div>
+                ))}
             </div>
         )
     }

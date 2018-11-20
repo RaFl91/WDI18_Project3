@@ -14,20 +14,20 @@ export default class Character extends Component {
     subgroup: ''
   }
 
-  componentDidMount() {
-    const initialState = {
-      characterId: this.props.character._id,
-      age: this.props.character.age,
-      gender: this.props.character.gender,
-      heightinfeet: this.props.character.heightinfeet,
-      heightininches: this.props.character.heightininches,
-      race: this.props.character.race,
-      weapon: this.props.character.weapon,
-      group: this.props.character.group,
-      subgroup: this.props.character.subgroup
-    }
-    this.setState(initialState)
-  }
+  // componentDidMount() {
+  //   const initialState = {
+  //     characterId: this.props.character._id,
+  //     age: this.props.character.age,
+  //     gender: this.props.character.gender,
+  //     heightinfeet: this.props.character.heightinfeet,
+  //     heightininches: this.props.character.heightininches,
+  //     race: this.props.character.race,
+  //     weapon: this.props.character.weapon,
+  //     group: this.props.character.group,
+  //     subgroup: this.props.character.subgroup
+  //   }
+  //   this.setState(initialState)
+  // }
 
   render() {
     return (
