@@ -5,7 +5,7 @@ import NavBar from './components/NavBar'
 import User from './components/User'
 import { createGlobalStyle } from 'styled-components'
 import UserProfile from './components/UserProfile'
-import Character from './components/Character'
+import CharacterProfile from './components/CharacterProfile'
 
 const Global = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Orbitron|Raleway');
@@ -25,7 +25,7 @@ class App extends Component {
           <Global />
           <NavBar />
           <Switch>
-            <Route exact path='/character/:characterId' component={Character}/>
+            <Route exact path='/character/:characterId' component={CharacterProfile}/>
             <Route exact path='/users/:userId' component={UserProfile}/>
             <Route exact path="/users" component={User} />
             <Route path='/' component={HomePage} />
