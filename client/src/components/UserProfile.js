@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+
 export default class UserProfile extends Component {
     state = {
         user: {},
@@ -20,11 +21,14 @@ export default class UserProfile extends Component {
     componentDidMount() {
         this.getAllCharacters()
     }
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+
+    render() {
+        return (
+            <div>
+                {/* {this.state.characters.map(character => (
+                    <UserProfile getAllCharacters={this.getAllCharacters} key={character._id} character={character}/>
+                ))} */}
+            </div>
+        )
+    }
 }
