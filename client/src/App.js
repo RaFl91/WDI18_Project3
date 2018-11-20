@@ -23,7 +23,7 @@ class App extends Component {
           <Global />
           <NavBar />
           <Switch>
-            <Route exact path="/users/:userId" component={User} />
+            <Route exact path="/users" component={User} />
             <Route path='/' component={HomePage} />
           </Switch>
         </div>

@@ -44,7 +44,7 @@ export default class HomePage extends Component {
         <p> The Character Creator</p>
         <main>For the authors, the table-top gamers, and the construstors in all of us.</main>
         <button>
-          <Link to='/users/:userId'>Begin</Link>
+          <Link to='/users'>Begin</Link>
         </button>
       </HomePageStyles>
     )
