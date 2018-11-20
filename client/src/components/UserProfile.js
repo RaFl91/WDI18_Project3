@@ -28,7 +28,7 @@ export default class UserProfile extends Component {
             <div>
                 {this.state.characters.map((character) => (
                     <div >
-                        <Link to={`/api/character/${character._id}`}>{character.name}</Link>
+                        <Link to={`/character/${character._id}`}>{character.name}</Link>
                     </div>
                 ))}
             </div>

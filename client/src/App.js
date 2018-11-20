@@ -25,7 +25,7 @@ class App extends Component {
           <Global />
           <NavBar />
           <Switch>
-            <Route exact path='/api/character/:characterId' component={Character}/>
+            <Route exact path='/character/:characterId' component={Character}/>
             <Route exact path='/users/:userId' component={UserProfile}/>
             <Route exact path="/users" component={User} />
             <Route path='/' component={HomePage} />
