@@ -19,24 +19,24 @@ export default class Character extends Component {
     }
   }
 
-  componentDidMount() {
+  getAllCharacters = () => {
     const userId = this.props.match.params.userId
     axios.get(`/api/users/${userId}/characters`).then(res => {
       this.setState({
-        character: res.data.characters
+        character: res.data.character
       })
     })
+  }
+
+  componentDidMount() {
+    this.getAllCharacters()
   }
 
   render() {
     return (
       <div>
-        <h1>I just</h1> 
-      <h1>{this.state.user.characters}</h1> 
-        {this.state.user.characters.map(character => (
-          <div>
-            <Link to={`/character/${character._id}`}>{character.name}</Link>
-          </div>
+        {this.state.user.characters.map((character) => (
+          <Link to={`/character/${character._id}`}>{character.name} </Link>
         ))}
       </div>
     )
