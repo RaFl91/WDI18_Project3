@@ -36,7 +36,9 @@ export default class Character extends Component {
     return (
       <div>
         {this.state.user.characters.map((character) => (
-          <Link to={`/character/${character._id}`}>{character.name} </Link>
+          <div>
+            <Link to={`/character/${character._id}`}>{character.name} </Link>
+          </div>
         ))}
       </div>
     )
