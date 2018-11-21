@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Character from './Character';
 
 
 export default class UserProfile extends Component {
@@ -20,7 +21,8 @@ export default class UserProfile extends Component {
         return (
             <div>
                 {this.state.user.img} <br/>
-                <h1>{this.state.user.username}</h1>
+                <h1>{this.state.user.username}</h1> <br/>
+                {/* <Character /> */}
             </div>
         )
     }

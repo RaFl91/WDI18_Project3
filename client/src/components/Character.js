@@ -6,7 +6,7 @@ export default class Character extends Component {
 
   state = {
     character: [],
-    newCharc: {
+    newCharacter: {
       name: '',
       age: '',
       gender: '',
@@ -21,9 +21,9 @@ export default class Character extends Component {
 
   componentDidMount() {
     const userId = this.props.match.params.userId
-    axios.get(`/api/users/${userId}`).then(res => {
+    axios.get(`/api/users/${userId}/characters`).then(res => {
       this.setState({
-        user: res.data
+        character: res.data.characters
       })
     })
   }
@@ -31,7 +31,9 @@ export default class Character extends Component {
   render() {
     return (
       <div>
-        {this.state.character.map((character) => (
+        <h1>I just</h1> 
+      <h1>{this.state.user.characters}</h1> 
+        {this.state.user.characters.map(character => (
           <div>
             <Link to={`/character/${character._id}`}>{character.name}</Link>
           </div>
